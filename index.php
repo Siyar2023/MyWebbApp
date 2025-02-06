@@ -23,7 +23,7 @@ $customers = json_decode(file_get_contents("customers.json"), true) ?? [];
             <td><?= htmlspecialchars($customer["name"]) ?></td>
             <td><?= htmlspecialchars($customer["email"]) ?></td>
             <td><?= htmlspecialchars($customer["phone"]) ?></td>
-            <td><a href="delete_customer.php?index=<?= $index ?>">❌</a></td>
+            <td><a href="delete_customer.php?index=<?= $index ?>">Delete</a></td>
         </tr>
     <?php endforeach; ?>
 </table>
